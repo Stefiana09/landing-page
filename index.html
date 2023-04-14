@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title> DOSE </title>
+</head>
+  
+ <body>
+   <header>
+     <h1> DOSE </h1>
+     <nav>
+      <div class="navbar">
+  <a href="#home">Home</a>
+  <a href="#">Videos</a>
+  <div class="dropdown">
+    <button class="dropbtn">Categories &#8595;
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a id="link" href="https://skilvul.com">Education</a>
+      <a href="#">Economics</a>
+      <a href="#">Politics</a>
+    </div>
+  </div>
+    <a href="#">About</a>  
+</div> 
+       </nav>
+   </header>
+   
+   <main>
+       <div class="hero-content">
+         <h2> What is DOSE? </h2>
+     <p id="description">
+       Dose merupakan platform media berita yang memungkinkan pemuda ASEAN untuk mengetahui kejadian/berita/isu-isu yang sedang terjadi di kawasan Asia Tenggara tanpa harus khawatir terkait tingkat validitasnya
+         </p>
+   
+   </main>
+  <form id="myForm">
+  <label for="name">Name:</label><br>
+  <input type="text" id="name" name="name" value=""><br>
+  <label for="city">City:</label><br>
+  <input type="text" id="city" name="city" value=""><br><br>
+  <label for="email">Email:</label><br>
+  <input type="email" id="email" name="email" value =""><br>
+  <label for="zip-code">Zip-code:</label><br>
+  <input type="number" id="zip-code" name="zip-code" value=""><br>
+  <label for="check" id="check"> Dengan ini saya menyatakan data yang diisi pada form ini adalah benar dan telah sesuai></label><br>
+  <input type="checkbox" id="status" name="status" checked=""><br>
+  <button type="submit" onclick="handleGetFormData()" id="submit-form"> Submit </button>
+</form>
+  <div id="warning"> </div>
+   
+  <div id="list-img">
+     <img class="gambar" src="https://images.unsplash.com/photo-1535021131637-96f0c931f5d2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8YXNlYW58ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" </img>
+    <img class="gambar1" src="https://images.unsplash.com/photo-1575562683593-5c16ea3813ee?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8YXNlYW58ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" </img>
+    <img class="gambar2" src="https://images.unsplash.com/photo-1621091465428-24e817fe5824?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8YXNlYW58ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" </img>
+  </div>
+    
+
+   <footer>
+       <div class="akhir">
+             <ul>
+               <li><button onclick="topFunction()" type="button" id="back-to-top-btn">Back To Top &#8593;</button></li>
+               <li><h3> DOSE </h3></li>
+              <li><h4> Stay Ahead of The Story </h4><li>
+              <li><p> Provide timely, accurate, and relevant information for any young folks in ASEAN region. </p></li>
+         </ul>
+       </div>
+       
+       <div class="sosmed">
+         <ul>
+           <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4a5.8 5.8 0 0 1-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8A5.8 5.8 0 0 1 7.8 2m-.2 2A3.6 3.6 0 0 0 4 7.6v8.8C4 18.39 5.61 20 7.6 20h8.8a3.6 3.6 0 0 0 3.6-3.6V7.6C20 5.61 18.39 4 16.4 4H7.6m9.65 1.5a1.25 1.25 0 0 1 1.25 1.25A1.25 1.25 0 0 1 17.25 8A1.25 1.25 0 0 1 16 6.75a1.25 1.25 0 0 1 1.25-1.25M12 7a5 5 0 0 1 5 5a5 5 0 0 1-5 5a5 5 0 0 1-5-5a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3a3 3 0 0 0 3 3a3 3 0 0 0 3-3a3 3 0 0 0-3-3Z"/></svg></li>
+           <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 10v4h3v7h4v-7h3l1-4h-4V8a1 1 0 0 1 1-1h3V3h-3a5 5 0 0 0-5 5v2H7"/></svg></li>
+           <li><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M22.991 3.95a1 1 0 0 0-1.51-.86a7.48 7.48 0 0 1-1.874.794a5.152 5.152 0 0 0-3.374-1.242a5.232 5.232 0 0 0-5.223 5.063a11.032 11.032 0 0 1-6.814-3.924a1.012 1.012 0 0 0-.857-.365a.999.999 0 0 0-.785.5a5.276 5.276 0 0 0-.242 4.769l-.002.001a1.041 1.041 0 0 0-.496.89a3.042 3.042 0 0 0 .027.439a5.185 5.185 0 0 0 1.568 3.312a.998.998 0 0 0-.066.77a5.204 5.204 0 0 0 2.362 2.922a7.465 7.465 0 0 1-3.59.448A1 1 0 0 0 1.45 19.3a12.942 12.942 0 0 0 7.01 2.061a12.788 12.788 0 0 0 12.465-9.363a12.822 12.822 0 0 0 .535-3.646l-.001-.2a5.77 5.77 0 0 0 1.532-4.202Zm-3.306 3.212a.995.995 0 0 0-.234.702c.01.165.009.331.009.488a10.824 10.824 0 0 1-.454 3.08a10.685 10.685 0 0 1-10.546 7.93a10.938 10.938 0 0 1-2.55-.301a9.48 9.48 0 0 0 2.942-1.564a1 1 0 0 0-.602-1.786a3.208 3.208 0 0 1-2.214-.935q.224-.042.445-.105a1 1 0 0 0-.08-1.943a3.198 3.198 0 0 1-2.25-1.726a5.3 5.3 0 0 0 .545.046a1.02 1.02 0 0 0 .984-.696a1 1 0 0 0-.4-1.137a3.196 3.196 0 0 1-1.425-2.673c0-.066.002-.133.006-.198a13.014 13.014 0 0 0 8.21 3.48a1.02 1.02 0 0 0 .817-.36a1 1 0 0 0 .206-.867a3.157 3.157 0 0 1-.087-.729a3.23 3.23 0 0 1 3.226-3.226a3.184 3.184 0 0 1 2.345 1.02a.993.993 0 0 0 .921.298a9.27 9.27 0 0 0 1.212-.322a6.681 6.681 0 0 1-1.026 1.524Z"/></svg></li>
+        </ul>
+       </div>
+       
+       <div class="footer-bottom">
+         <p>&copy;2023 <a href=”#”>DOSE</a></p>
+        </div>
+     </footer>
+   </div>
+ </div>    
+</body>
+</html>
